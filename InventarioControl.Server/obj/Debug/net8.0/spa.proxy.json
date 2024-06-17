@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "",
+"RedirectUrl": "",
+"LaunchCommand": "",
+"WorkingDirectory": "C:\\Users\\dsanchez\\source\\repos\\InventarioControl\\InventarioControl.Server",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

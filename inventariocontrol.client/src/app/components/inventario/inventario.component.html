@@ -1,0 +1,33 @@
+<div class="inventario-container">
+  <h2>Inventario</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Serial</th>
+        <th>Modelo</th>
+        <th>Descripción</th>
+        <th>Color</th>
+        <th>Fecha de Compra</th>
+        <th>Precio</th>
+        <th>Usuario a Cargo</th>
+        <th>Marca</th>
+        <th>Estado</th>
+        <th>Tipo de Equipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of inventario">
+        <td>{{ item.serial }}</td>
+        <td>{{ item.modelo }}</td>
+        <td>{{ item.descripcion }}</td>
+        <td>{{ item.color }}</td>
+        <td>{{ item.fechaCompra | date }}</td>
+        <td>{{ item.precio | currency }}</td>
+        <td>{{ item.usuario.nombre }}</td>
+        <td>{{ item.marca.nombre }}</td>
+        <td>{{ item.estadoDeEquipo.nombre }}</td>
+        <td>{{ item.tipoDeEquipo.nombre }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

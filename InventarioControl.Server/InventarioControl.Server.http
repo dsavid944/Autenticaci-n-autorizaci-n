@@ -1,0 +1,4 @@
+@InventarioControl.Server_HostAddress = http://localhost:5285
+Accept: application/json
+
+###
